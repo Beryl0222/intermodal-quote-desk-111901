@@ -2,7 +2,7 @@
   "mail": [
     {
       "id": "E1",
-      "body": "周三西场到东库铁路 3000 元，尾程冷车另询。"
+      "body": "周三西场到东库铁路 3000 元，用 W3。尾程冷车另询。"
     },
     {
       "id": "E2",
@@ -13,6 +13,11 @@
       "id": "E3",
       "replyTo": "E2",
       "body": "Option two, but cold cover only until 东库. No change to allotment W3."
+    },
+    {
+      "id": "E4",
+      "replyTo": "E3",
+      "body": "另可在东库交给东线车，全程冷接驳。东库至河苑 1750 元，和前信方案二分开下单，不含装卸费。"
     }
   ],
   "network": [
@@ -29,6 +34,13 @@
       "to": "河苑",
       "maxCm": 290,
       "travelMinutes": 90
+    },
+    {
+      "id": "road-east",
+      "from": "东库",
+      "to": "河苑",
+      "maxCm": 260,
+      "travelMinutes": 115
     }
   ],
   "requests": [
@@ -47,6 +59,14 @@
       "heightCm": 245,
       "maxUnconditionedMinutes": 35,
       "units": 1
+    },
+    {
+      "id": "Q3",
+      "from": "西场",
+      "to": "河苑",
+      "heightCm": 252,
+      "maxUnconditionedMinutes": 25,
+      "units": 1
     }
   ],
   "allotments": [
@@ -54,6 +74,22 @@
       "id": "W3",
       "units": 1,
       "supplier": "中桥联运"
+    }
+  ],
+  "transfers": [
+    {
+      "site": "东库",
+      "inbound": "rail",
+      "outbound": "road",
+      "minutes": 30,
+      "conditioned": false
+    },
+    {
+      "site": "东库",
+      "inbound": "rail",
+      "outbound": "road-east",
+      "minutes": 20,
+      "conditioned": true
     }
   ]
 }
