@@ -1,0 +1,59 @@
+{
+  "mail": [
+    {
+      "id": "E1",
+      "body": "周三西场到东库铁路 3000 元，尾程冷车另询。"
+    },
+    {
+      "id": "E2",
+      "replyTo": "E1",
+      "body": "Option two: through reefer to 河苑 via 东库. CNY 4200 for both legs, same reservation allotment W3, no split."
+    },
+    {
+      "id": "E3",
+      "replyTo": "E2",
+      "body": "Option two, but cold cover only until 东库. No change to allotment W3."
+    }
+  ],
+  "network": [
+    {
+      "id": "rail",
+      "from": "西场",
+      "to": "东库",
+      "maxCm": 259,
+      "travelMinutes": 300
+    },
+    {
+      "id": "road",
+      "from": "东库",
+      "to": "河苑",
+      "maxCm": 290,
+      "travelMinutes": 90
+    }
+  ],
+  "requests": [
+    {
+      "id": "Q1",
+      "from": "西场",
+      "to": "河苑",
+      "heightCm": 250,
+      "maxUnconditionedMinutes": 25,
+      "units": 1
+    },
+    {
+      "id": "Q2",
+      "from": "西场",
+      "to": "东库",
+      "heightCm": 245,
+      "maxUnconditionedMinutes": 35,
+      "units": 1
+    }
+  ],
+  "allotments": [
+    {
+      "id": "W3",
+      "units": 1,
+      "supplier": "中桥联运"
+    }
+  ]
+}
