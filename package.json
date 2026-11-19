@@ -8,6 +8,7 @@
   },
   "scripts": {
     "inspect:data": "node scripts/inspect.mjs",
+    "workbench": "node src/cli.mjs",
     "test": "node --test"
   }
 }
